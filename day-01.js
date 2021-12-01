@@ -14,9 +14,9 @@ for( let index in list ) {
     increases += ( list[index+1] > list[index] ? 1 : 0 );
 }
 
-console.log('Part 1: ', increases); // 1532
+console.log('Part 1: ', increases);
 
-// reset.
+// Reset.
 increases = 0;
 
 for( let index in list ) {
@@ -27,8 +27,6 @@ for( let index in list ) {
 
     const a = list[index] + list[index+1] + list[index+2];
     const b = list[index+1] + list[index+2] + list[index+3];
-
-    console.log(a, b);
 
     increases += ( b > a ? 1 : 0 );
 }
